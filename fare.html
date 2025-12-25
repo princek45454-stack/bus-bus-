@@ -7,16 +7,18 @@
 </head>
 <body class="app">
 
-<h2>Journey Details</h2>
+<div class="header">Journey Details</div>
 
-<input id="from" placeholder="From Stop" />
-<input id="to" placeholder="To Stop" />
+<div class="card">
+  <input placeholder="From Stop" />
+  <input placeholder="To Stop" />
 
-<button onclick="calc()">Calculate Fare</button>
+  <button onclick="calc()">Calculate Fare</button>
 
-<div id="result"></div>
+  <div id="result"></div>
+</div>
 
-<button onclick="pay()">Pay Now</button>
+<button onclick="pay()">Proceed to Pay</button>
 
 <script>
 function calc() {
@@ -27,9 +29,9 @@ function calc() {
   localStorage.setItem("fare", finalFare);
 
   document.getElementById("result").innerHTML = `
-    Fare: ₹${fare}<br>
-    Chartr Discount (10%): ₹${discount}<br>
-    <b>Payable: ₹${finalFare}</b>
+    <p>Fare: ₹${fare}</p>
+    <p>Chartr Discount: ₹${discount}</p>
+    <h3>Pay ₹${finalFare}</h3>
   `;
 }
 
@@ -39,4 +41,5 @@ function pay() {
 </script>
 
 </body>
+
 </html>
