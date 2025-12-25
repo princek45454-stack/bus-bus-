@@ -7,13 +7,21 @@
 </head>
 <body class="app">
 
-<h2>🎫 Ticket Generated</h2>
+<div class="header">Ticket</div>
 
-<p>Bus Number: <b id="bus"></b></p>
-<p>Amount Paid: ₹<b id="amt"></b></p>
-<p>Status: <span style="color:green">PAID</span></p>
+<div class="card ticket">
+  <h2>🎫 Ticket Confirmed</h2>
 
-<p>Ticket ID: CHRTR-001</p>
+  <p>Bus Number</p>
+  <h3 id="bus"></h3>
+
+  <p>Amount Paid</p>
+  <h3>₹<span id="amt"></span></h3>
+
+  <div class="ticket-id">
+    Ticket ID: CHRTR-001
+  </div>
+</div>
 
 <script>
 document.getElementById("bus").innerText =
@@ -24,4 +32,5 @@ document.getElementById("amt").innerText =
 </script>
 
 </body>
+
 </html>
