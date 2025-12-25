@@ -1,0 +1,28 @@
+body.app {
+  max-width: 420px;
+  margin: auto;
+  font-family: Arial;
+  padding: 20px;
+}
+
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+button {
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.scan-box {
+  height: 200px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
