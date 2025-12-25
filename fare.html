@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app">
+
+<h2>Journey Details</h2>
+
+<input id="from" placeholder="From Stop" />
+<input id="to" placeholder="To Stop" />
+
+<button onclick="calc()">Calculate Fare</button>
+
+<div id="result"></div>
+
+<button onclick="pay()">Pay Now</button>
+
+<script>
+function calc() {
+  let fare = 40;
+  let discount = fare * 0.1;
+  let finalFare = fare - discount;
+
+  localStorage.setItem("fare", finalFare);
+
+  document.getElementById("result").innerHTML = `
+    Fare: ₹${fare}<br>
+    Chartr Discount (10%): ₹${discount}<br>
+    <b>Payable: ₹${finalFare}</b>
+  `;
+}
+
+function pay() {
+  location.href = "payment.html";
+}
+</script>
+
+</body>
+</html>
