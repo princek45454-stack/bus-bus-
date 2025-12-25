@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app">
+
+<h2>🎫 Ticket Generated</h2>
+
+<p>Bus Number: <b id="bus"></b></p>
+<p>Amount Paid: ₹<b id="amt"></b></p>
+<p>Status: <span style="color:green">PAID</span></p>
+
+<p>Ticket ID: CHRTR-001</p>
+
+<script>
+document.getElementById("bus").innerText =
+  localStorage.getItem("bus");
+
+document.getElementById("amt").innerText =
+  localStorage.getItem("fare");
+</script>
+
+</body>
+</html>
