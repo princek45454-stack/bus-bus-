@@ -7,16 +7,18 @@
 </head>
 <body class="app">
 
-<h2>Scan Bus QR</h2>
+<div class="header">Scan Ticket</div>
 
-<div class="scan-box">
-  📷 QR Scanner (Demo)
+<div class="card">
+  <div class="scan-box">
+    📷 Scan Bus QR (Demo)
+  </div>
+
+  <p style="text-align:center">OR</p>
+
+  <input id="busNo" placeholder="Enter Bus Number" />
+  <button onclick="go()">Continue</button>
 </div>
-
-<p>OR</p>
-
-<input id="busNo" placeholder="Enter Bus Number" />
-<button onclick="go()">Continue</button>
 
 <script>
 function go() {
@@ -31,4 +33,5 @@ function go() {
 </script>
 
 </body>
+
 </html>
