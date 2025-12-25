@@ -7,19 +7,21 @@
 </head>
 <body class="app">
 
-<h2>PhonePe</h2>
-<p>Enter UPI PIN</p>
+<div class="header">PhonePe</div>
 
-<input type="password" placeholder="****" />
+<div class="card">
+  <p>Enter UPI PIN</p>
+  <input class="pin" type="password" placeholder="****" />
 
-<button onclick="success()">Pay</button>
+  <button onclick="success()">Pay Now</button>
+</div>
 
 <script>
 function success() {
-  alert("Payment Successful (Demo)");
   location.href = "ticket.html";
 }
 </script>
 
 </body>
+
 </html>
